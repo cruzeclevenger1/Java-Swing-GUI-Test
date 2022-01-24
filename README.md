@@ -10,3 +10,5 @@ Variables:
 
   boolean done = false;   //for showing when your done, aka exit bool
   int random = new Random(); //int
+
+  
