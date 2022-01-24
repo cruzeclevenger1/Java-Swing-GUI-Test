@@ -6,29 +6,54 @@ class Main {
 
   public static void main(String[] args) {
 
-    Random rand = new Random();
+    //prepare all imports
 
-    System.out.println(rand.nextInt(10));
+    Random rand = new Random();
 
     Scanner input = new Scanner(System.in);
 
-    String inputtest = input.nextLine();
-
-    if (inputtest.equals("testing")) {
-      System.out.println(
-        "Testing Successful"
-      );
-    }
-    else {
-      System.out.println("Testing unsuccessful");
-    }
-
     JFrame myframe = new JFrame();
 
-    myframe.setVisible(true);
+    
     myframe.setSize(300, 300);
     myframe.setTitle("Blank Window");
     myframe.setResizable(false);
+    myframe.setLocation(300,300);
+
+
+    //*******************************************
+
+    boolean done = false;
+
+
+    while (done == false) {
+
+      System.out.print("Console > > >  ");  
+
+      String coninput = input.nextLine();
+
+      if (coninput.equals("window open")) {
+        System.out.println("Opening Window...");
+        System.out.println("Done!");
+
+        myframe.setVisible(true);
+      }
+
+      if (coninput.equals("window close")) {
+        System.out.println("Closing Window...");
+
+        myframe.setVisible(false);
+        System.out.println("Done!");
+      }
+
+      if (coninput.equals("exit")) {
+        System.out.println("Exiting...");
+        myframe.dispose();
+        done = true;
+        System.out.println("Done!");
+      }
+
+    }
 
 
   }
