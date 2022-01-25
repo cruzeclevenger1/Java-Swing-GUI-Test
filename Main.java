@@ -70,17 +70,18 @@ class Main {
         //System.out.println("");
       }
 
-      **if (coninput.equals("change text") && winopen == true) {
+      if (coninput.equals("change text") && winopen == true) {
         System.out.print("What do you want the text to say > > > ");
         JLabel text1 = new JLabel(input.nextLine());
         System.out.println("Adding...");
         myframe.add(text1);
-      }**
+      }
 
 
 
       if (coninput.equals("change text") && winopen == false) {
         System.out.print("You have to have a window open.");
       }
-
     }
+  }
+}
