@@ -1,14 +1,5 @@
 # Java-Swing-GUI-Test
-Testing out Java Swing with an interactive window.
 
+This is a GUI Interactive Console with Swing and Scanner for input. 
 
-Plan: 
-
-import Scanner, Random, and Swing.*
-
-Variables:
-
-  boolean done = false;   //for showing when your done, aka exit bool
-  int random = new Random(); //int
-
-  
+Using different commands in the console, you can interact with the window panel.
